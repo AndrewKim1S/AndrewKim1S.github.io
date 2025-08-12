@@ -1,7 +1,7 @@
 # Andrew Sheehyun Kim
 
 <div style="display: flow-root;"> 
-  <img src="/image/sample.webp" alt="Image" style="float: left; width: 200px; margin-left: 10px; margin-right: 25px">
+  <img src="/headshot.png" alt="Image" style="float: left; width: 200px; margin-left: 10px; margin-right: 25px">
   <p>Hi I'm Andrew, a Computer Science student currently studying at the University of Maryland - College Park (UMD). My primary research interests include areas in Security, Systems, and PL such as System/Software Security and Program Synthesis. </p>
 </div>
 
