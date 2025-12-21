@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Sheehyun Kim | CS Graduate Student</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --sidebar-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar / Left Margin */
+        aside {
+            width: 300px;
+            height: 100vh;
+            position: fixed;
+            background: var(--sidebar-bg);
+            padding: 2rem;
+            border-right: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .headshot {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .contact-links {
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .contact-links a {
+            display: block;
+            margin-bottom: 0.75rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Main Content */
+        main {
+            margin-left: 350px;
+            padding: 3rem;
+            max-width: 800px;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        h2 { border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 1.5rem; }
+        
+        .entry { margin-bottom: 1.5rem; }
+        .entry-title { font-weight: bold; font-size: 1.1rem; }
+        .entry-meta { color: #6b7280; font-size: 0.9rem; margin-bottom: 0.5rem; }
+
+        /* Responsive design for mobile */
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            aside { position: relative; width: 100%; height: auto; border-right: none; padding: 2rem 0; }
+            main { margin-left: 0; padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <aside>
+        <img src="images/headshot.png" class="headshot">
+        
+        <div class="contact-links">
+            <h3>Connect</h3>
+            <a href="akim1240@umd.edu">📧 Email</a>
+            <a href="https://github.com/AndrewKim1S" target="_blank">💻 GitHub</a>
+            <a href="https://linkedin.com/in/andrew-kim-75ba14250" target="_blank">🔗 LinkedIn</a>
+            <a href="https://youtube.com/@sheehyunkim7646" target="_blank">📺 YouTube</a>
+            <a href="docs/CV.pdf" target="_blank">📄 CV</a>
+        </div>
+    </aside>
+
+    <main>
+        <section id="bio">
+            <h1>Andrew Sheehyun Kim</h1>
+            <p><strong>M.S. Student in Computer Science</strong> @ University Maryland</p>
+            <p>Graduate Student studying at the University of Maryland - College Park, Department of Computer Science. 
+
+						My research interests covers a wide range of topics related to Systems and Software Security, Program Analysis, Reverse Engineering, and developing pragmatic solutions. I am also interested Program Synthesis and its applications for Security. 
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-title">M.S. in Computer Science</div>
+                <div class="entry-meta">University of Maryland - College Park | September 2025 — Present</div>
+            </div>
+            <div class="entry">
+                <div class="entry-title">B.S. in Computer Science</div>
+                <div class="entry-meta">University of Wisconsin - Madison | September 2022 — May 2025</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="entry">
+                <div class="entry-title">Graduate Research Assistant</div>
+                <div class="entry-meta">SEED (Secure and Sound Software Lab) | April 2025 - Present</div>
+                <div class="entry-meta">Prof. Yonghwi Kwon</div>
+            </div>
+            <div class="entry">
+                <div class="entry-title">Undergraduate Research Assistant</div>
+                <div class="entry-meta">ARC (Autonomous Resilient Controls Lab) | March 2023 - January 2025</div>
+								<div class="entry-meta">Prof. Xiangru Xu</div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+						<p> To Appear </p>
+						<!--
+            <div class="entry">
+                <p><strong>Your Name</strong>, Co-author A., & Co-author B. (2024). 
+                <em>"Title of Your Incredible Research Paper."</em> 
+                Published in Proceedings of [Conference Name].</p>
+						</div> 
+						-->
+        </section>
+
+        <section id="projects">
+            <h2>Other</h2>
+            <div class="entry">
+                <div class="entry-title">Bambu Recurse: Extending Bambu to Synthesize Recursion</div>
+                <p>Allow bambu to synthesize recursive functions by translating recursion into iteration with an explicit stack </p>
+								<a href="docs/Bambu_Recurse.pdf" target="_blank">📄 Paper</a>
+						</div>
+            <div class="entry">
+								<div class="entry-title">CTFs, Offensive Security POCs</div>
+								<p>CTF writeups for Over the Wire, pwnable.
+								Offensive security proof of concept tools such as kernel level rootkits, ELF file virus, etc</p>
+								<a href="https://github.com/AndrewKim1S/Offensive-Security-Projects" target="_blank">💻 Projects</a>
+						</div>
+        </section>
+    </main>
+
+</body>
+</html>
