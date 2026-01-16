@@ -7,11 +7,12 @@
     <style>
         :root {
             --primary-color: #2563eb;
-						--bg-color: #1a1a1a;
+						--bg-color: #090909;
 						--text-color: #f0f0f0;
-						--sidebar-bg: #111111;
+						--sidebar-bg: #060708;
 						--btn-bg: #333333;
-						--link-color: #60a5fa
+						--link-color: #60a5fa;
+						--meta-color: #b0bec5;
         }
 				.light-theme {
             --text-color: #1f2937;
@@ -19,6 +20,7 @@
             --sidebar-bg: #f8fafc;
 						--btn-bg: #e5e7eb;
 						--link-color: #2563eb;
+						--meta-color: #64748b;
 				}
 
         body {
@@ -112,7 +114,7 @@
         
         .entry { margin-bottom: 1.5rem; }
         .entry-title { font-weight: bold; font-size: 1.1rem; }
-        .entry-meta { color: #6b7280; font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .entry-meta { color: var(--meta-color); font-size: 0.9rem; margin-bottom: 0.5rem; }
 
         /* Responsive design for mobile */
         @media (max-width: 900px) {
@@ -212,7 +214,7 @@
             <h2>Other</h2>
             <div class="entry">
                 <div class="entry-title">Bambu Recurse: Extending Bambu to Synthesize Recursion</div>
-                <p>Allow bambu to synthesize recursive functions by translating recursion into iteration with an explicit stack </p>
+                <div class="entry-meta">Allow bambu to synthesize recursive functions by translating recursion into iteration with an explicit stack </div>
 								<div class="entry-links">
 										<a href="docs/Bambu_Recurse.pdf" target="_blank">📄 Paper</a>
 										<a href="docs/Bambu_Recurse_Presentation.pdf" target="_blank">📄 Slides</a>
@@ -222,8 +224,7 @@
 						</div>
             <div class="entry">
 								<div class="entry-title">CTFs, Offensive Security POCs</div>
-								<p>CTF writeups for Over the Wire, pwnable.
-								Offensive security proof of concept tools such as kernel level rootkits, ELF file virus, etc</p>
+								<div class="entry-meta">CTF writeups for OverTheWire & pwnable.	Offensive security proof of concept tools such as kernel level rootkits, ELF file virus, etc</div>
 								<a href="https://github.com/AndrewKim1S/Offensive-Security-Projects" target="_blank">💻 Projects</a>
 						</div>
         </section>
